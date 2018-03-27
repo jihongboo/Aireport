@@ -10,17 +10,36 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var aqiLable: UILabel!
+    var isBlack: Bool {
+        set {
+            UserDefaults.standard.set(newValue, forKey: "isBlack")
+            view.backgroundColor = newValue ? .black : .white
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
+        get {
+            if let bool = UserDefaults.standard.value(forKey: "isBlack") as? Bool {
+                return bool
+            }
+            return false
+        }
+    }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return isBlack ? .lightContent : .default
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let tap = UITapGestureRecognizer(target: self, action: #selector(changeColor))
+        view.addGestureRecognizer(tap)
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super .viewWillAppear(animated)
-        gateDate()
+    @objc func changeColor() {
+        isBlack = !isBlack
     }
 
-    func gateDate() {
+    func getDate() {
         AirAPI.getAirReport { (airModel) in
             self.aqiLable.text = "\(airModel.aqi)";
             switch airModel.aqi {
