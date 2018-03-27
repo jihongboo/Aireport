@@ -8,13 +8,7 @@
 
 import UIKit
 
-enum ResponseStatus: String, Codable {
-    case ok
-    case error
-}
-
-struct ResponseModel: Codable {
-    var status: ResponseStatus
+struct AirResponse: Codable {
     var data: AirModel
 }
 

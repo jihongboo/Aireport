@@ -19,19 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    public func applicationDidBecomeActive(_ application: UIApplication) {
-        if let vc = window?.rootViewController as? ViewController {
-            vc.getDate()
-        }
-    }
-
     func registerPush() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.badge]) { (granted, error) in
-            if granted {
-                print("UserNotifications authorized")
-            } else {
-                print(error!)
-            }
         }
     }
 

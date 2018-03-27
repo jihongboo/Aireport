@@ -14,6 +14,8 @@
 		22BC6AF82068C7F600EC76F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BC6AF62068C7F600EC76F3 /* LaunchScreen.storyboard */; };
 		22BC6B002068CA5D00EC76F3 /* AirModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6AFF2068CA5D00EC76F3 /* AirModel.swift */; };
 		22BC6B022068D1CF00EC76F3 /* AirAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6B012068D1CF00EC76F3 /* AirAPI.swift */; };
+		22BC6B042069E3EA00EC76F3 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6B032069E3EA00EC76F3 /* SearchVC.swift */; };
+		22BC6B092069E85C00EC76F3 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6B082069E85C00EC76F3 /* PlaceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		22BC6AF92068C7F600EC76F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22BC6AFF2068CA5D00EC76F3 /* AirModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirModel.swift; sourceTree = "<group>"; };
 		22BC6B012068D1CF00EC76F3 /* AirAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirAPI.swift; sourceTree = "<group>"; };
+		22BC6B032069E3EA00EC76F3 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		22BC6B082069E85C00EC76F3 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,42 @@
 		22BC6AEC2068C7F600EC76F3 /* Aireport */ = {
 			isa = PBXGroup;
 			children = (
+				22BC6B072069E40C00EC76F3 /* API */,
+				22BC6B062069E3FB00EC76F3 /* Model */,
+				22BC6B052069E3F100EC76F3 /* VC */,
 				22BC6AED2068C7F600EC76F3 /* AppDelegate.swift */,
-				22BC6AEF2068C7F600EC76F3 /* ViewController.swift */,
-				22BC6B012068D1CF00EC76F3 /* AirAPI.swift */,
-				22BC6AFF2068CA5D00EC76F3 /* AirModel.swift */,
-				22BC6AF12068C7F600EC76F3 /* Main.storyboard */,
 				22BC6AF42068C7F600EC76F3 /* Assets.xcassets */,
 				22BC6AF62068C7F600EC76F3 /* LaunchScreen.storyboard */,
 				22BC6AF92068C7F600EC76F3 /* Info.plist */,
 			);
 			path = Aireport;
+			sourceTree = "<group>";
+		};
+		22BC6B052069E3F100EC76F3 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				22BC6AF12068C7F600EC76F3 /* Main.storyboard */,
+				22BC6AEF2068C7F600EC76F3 /* ViewController.swift */,
+				22BC6B032069E3EA00EC76F3 /* SearchVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		22BC6B062069E3FB00EC76F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22BC6AFF2068CA5D00EC76F3 /* AirModel.swift */,
+				22BC6B082069E85C00EC76F3 /* PlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22BC6B072069E40C00EC76F3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				22BC6B012068D1CF00EC76F3 /* AirAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22BC6AF02068C7F600EC76F3 /* ViewController.swift in Sources */,
+				22BC6B092069E85C00EC76F3 /* PlaceModel.swift in Sources */,
+				22BC6B042069E3EA00EC76F3 /* SearchVC.swift in Sources */,
 				22BC6B022068D1CF00EC76F3 /* AirAPI.swift in Sources */,
 				22BC6B002068CA5D00EC76F3 /* AirModel.swift in Sources */,
 				22BC6AEE2068C7F600EC76F3 /* AppDelegate.swift in Sources */,
