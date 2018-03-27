@@ -15,28 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         registerPush()
-        UIApplication.shared.setMinimumBackgroundFetchInterval(60 * 60 * 60)
+        UIApplication.shared.setMinimumBackgroundFetchInterval(60 * 60)
         return true
     }
 
     func registerPush() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
-            if granted {
-                print("UserNotifications authorized")
-            } else {
-                print(error!)
-            }
+        UNUserNotificationCenter.current().requestAuthorization(options: [.badge]) { (granted, error) in
         }
     }
 
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         AirAPI.getAirReport { (airModel) in
-//            let content = UNMutableNotificationContent()
-//            content.badge = NSNumber(value: airModel.aqi)
-//            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-//            let requestIdentifier = "airReport update"
-//            let request = UNNotificationRequest(identifier: requestIdentifier, content: content, trigger: trigger)
-//            UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         }
         completionHandler(.newData)
     }
