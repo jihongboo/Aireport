@@ -7,18 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22184140206B390E008458C2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2218413F206B390E008458C2 /* NotificationCenter.framework */; };
+		22184143206B390E008458C2 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22184142206B390E008458C2 /* TodayViewController.swift */; };
+		22184146206B390E008458C2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22184144206B390E008458C2 /* MainInterface.storyboard */; };
+		2218414A206B390F008458C2 /* AireportWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2218413D206B390E008458C2 /* AireportWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2218415A206B43E1008458C2 /* AireportKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 22184158206B43E1008458C2 /* AireportKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2218415D206B43E1008458C2 /* AireportKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22184156206B43E1008458C2 /* AireportKit.framework */; };
+		2218415E206B43E1008458C2 /* AireportKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22184156206B43E1008458C2 /* AireportKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22184163206B4407008458C2 /* AireportKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22184156206B43E1008458C2 /* AireportKit.framework */; };
+		22184164206B4767008458C2 /* AirAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6B012068D1CF00EC76F3 /* AirAPI.swift */; };
+		22184165206B47CC008458C2 /* AirModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6AFF2068CA5D00EC76F3 /* AirModel.swift */; };
+		22184166206B47D0008458C2 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6B082069E85C00EC76F3 /* PlaceModel.swift */; };
+		22184168206B6C76008458C2 /* AirTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22184167206B6C76008458C2 /* AirTools.swift */; };
 		22BC6AEE2068C7F600EC76F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6AED2068C7F600EC76F3 /* AppDelegate.swift */; };
 		22BC6AF02068C7F600EC76F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6AEF2068C7F600EC76F3 /* ViewController.swift */; };
 		22BC6AF32068C7F600EC76F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BC6AF12068C7F600EC76F3 /* Main.storyboard */; };
 		22BC6AF52068C7F600EC76F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BC6AF42068C7F600EC76F3 /* Assets.xcassets */; };
 		22BC6AF82068C7F600EC76F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BC6AF62068C7F600EC76F3 /* LaunchScreen.storyboard */; };
-		22BC6B002068CA5D00EC76F3 /* AirModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6AFF2068CA5D00EC76F3 /* AirModel.swift */; };
-		22BC6B022068D1CF00EC76F3 /* AirAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6B012068D1CF00EC76F3 /* AirAPI.swift */; };
 		22BC6B042069E3EA00EC76F3 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6B032069E3EA00EC76F3 /* SearchVC.swift */; };
-		22BC6B092069E85C00EC76F3 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6B082069E85C00EC76F3 /* PlaceModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		22184148206B390F008458C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22BC6AE22068C7F600EC76F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2218413C206B390E008458C2;
+			remoteInfo = AireportWidget;
+		};
+		2218415B206B43E1008458C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22BC6AE22068C7F600EC76F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22184155206B43E1008458C2;
+			remoteInfo = AireportKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2218414E206B390F008458C2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2218414A206B390F008458C2 /* AireportWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22184162206B43E1008458C2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2218415E206B43E1008458C2 /* AireportKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2218413D206B390E008458C2 /* AireportWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AireportWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2218413F206B390E008458C2 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		22184142206B390E008458C2 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		22184145206B390E008458C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		22184147206B390F008458C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2218414F206B3B1F008458C2 /* AireportWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AireportWidget.entitlements; sourceTree = "<group>"; };
+		22184150206B3BE0008458C2 /* Aireport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Aireport.entitlements; sourceTree = "<group>"; };
+		22184156206B43E1008458C2 /* AireportKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AireportKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22184158206B43E1008458C2 /* AireportKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AireportKit.h; sourceTree = "<group>"; };
+		22184159206B43E1008458C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22184167206B6C76008458C2 /* AirTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTools.swift; sourceTree = "<group>"; };
 		22BC6AEA2068C7F600EC76F3 /* Aireport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aireport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BC6AED2068C7F600EC76F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22BC6AEF2068C7F600EC76F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,20 +95,70 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		22BC6AE72068C7F600EC76F3 /* Frameworks */ = {
+		2218413A206B390E008458C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22184163206B4407008458C2 /* AireportKit.framework in Frameworks */,
+				22184140206B390E008458C2 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22184152206B43E1008458C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22BC6AE72068C7F600EC76F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2218415D206B43E1008458C2 /* AireportKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2218413E206B390E008458C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2218413F206B390E008458C2 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22184141206B390E008458C2 /* AireportWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2218414F206B3B1F008458C2 /* AireportWidget.entitlements */,
+				22184142206B390E008458C2 /* TodayViewController.swift */,
+				22184144206B390E008458C2 /* MainInterface.storyboard */,
+				22184147206B390F008458C2 /* Info.plist */,
+			);
+			path = AireportWidget;
+			sourceTree = "<group>";
+		};
+		22184157206B43E1008458C2 /* AireportKit */ = {
+			isa = PBXGroup;
+			children = (
+				22BC6B072069E40C00EC76F3 /* API */,
+				22BC6B062069E3FB00EC76F3 /* Model */,
+				22184158206B43E1008458C2 /* AireportKit.h */,
+				22184159206B43E1008458C2 /* Info.plist */,
+			);
+			path = AireportKit;
+			sourceTree = "<group>";
+		};
 		22BC6AE12068C7F600EC76F3 = {
 			isa = PBXGroup;
 			children = (
 				22BC6AEC2068C7F600EC76F3 /* Aireport */,
+				22184141206B390E008458C2 /* AireportWidget */,
+				22184157206B43E1008458C2 /* AireportKit */,
+				2218413E206B390E008458C2 /* Frameworks */,
 				22BC6AEB2068C7F600EC76F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				22BC6AEA2068C7F600EC76F3 /* Aireport.app */,
+				2218413D206B390E008458C2 /* AireportWidget.appex */,
+				22184156206B43E1008458C2 /* AireportKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,8 +176,7 @@
 		22BC6AEC2068C7F600EC76F3 /* Aireport */ = {
 			isa = PBXGroup;
 			children = (
-				22BC6B072069E40C00EC76F3 /* API */,
-				22BC6B062069E3FB00EC76F3 /* Model */,
+				22184150206B3BE0008458C2 /* Aireport.entitlements */,
 				22BC6B052069E3F100EC76F3 /* VC */,
 				22BC6AED2068C7F600EC76F3 /* AppDelegate.swift */,
 				22BC6AF42068C7F600EC76F3 /* Assets.xcassets */,
@@ -95,6 +208,7 @@
 		22BC6B072069E40C00EC76F3 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				22184167206B6C76008458C2 /* AirTools.swift */,
 				22BC6B012068D1CF00EC76F3 /* AirAPI.swift */,
 			);
 			path = API;
@@ -102,7 +216,53 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		22184153206B43E1008458C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2218415A206B43E1008458C2 /* AireportKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		2218413C206B390E008458C2 /* AireportWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2218414D206B390F008458C2 /* Build configuration list for PBXNativeTarget "AireportWidget" */;
+			buildPhases = (
+				22184139206B390E008458C2 /* Sources */,
+				2218413A206B390E008458C2 /* Frameworks */,
+				2218413B206B390E008458C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AireportWidget;
+			productName = AireportWidget;
+			productReference = 2218413D206B390E008458C2 /* AireportWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		22184155206B43E1008458C2 /* AireportKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2218415F206B43E1008458C2 /* Build configuration list for PBXNativeTarget "AireportKit" */;
+			buildPhases = (
+				22184151206B43E1008458C2 /* Sources */,
+				22184152206B43E1008458C2 /* Frameworks */,
+				22184153206B43E1008458C2 /* Headers */,
+				22184154206B43E1008458C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AireportKit;
+			productName = AireportKit;
+			productReference = 22184156206B43E1008458C2 /* AireportKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		22BC6AE92068C7F600EC76F3 /* Aireport */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22BC6AFC2068C7F600EC76F3 /* Build configuration list for PBXNativeTarget "Aireport" */;
@@ -110,10 +270,14 @@
 				22BC6AE62068C7F600EC76F3 /* Sources */,
 				22BC6AE72068C7F600EC76F3 /* Frameworks */,
 				22BC6AE82068C7F600EC76F3 /* Resources */,
+				2218414E206B390F008458C2 /* Embed App Extensions */,
+				22184162206B43E1008458C2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				22184149206B390F008458C2 /* PBXTargetDependency */,
+				2218415C206B43E1008458C2 /* PBXTargetDependency */,
 			);
 			name = Aireport;
 			productName = Aireport;
@@ -130,10 +294,26 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = ZacJi;
 				TargetAttributes = {
+					2218413C206B390E008458C2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					22184155206B43E1008458C2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					22BC6AE92068C7F600EC76F3 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
@@ -155,11 +335,28 @@
 			projectRoot = "";
 			targets = (
 				22BC6AE92068C7F600EC76F3 /* Aireport */,
+				2218413C206B390E008458C2 /* AireportWidget */,
+				22184155206B43E1008458C2 /* AireportKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2218413B206B390E008458C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22184146206B390E008458C2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22184154206B43E1008458C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22BC6AE82068C7F600EC76F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,22 +370,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		22184139206B390E008458C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22184143206B390E008458C2 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22184151206B43E1008458C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22184165206B47CC008458C2 /* AirModel.swift in Sources */,
+				22184166206B47D0008458C2 /* PlaceModel.swift in Sources */,
+				22184168206B6C76008458C2 /* AirTools.swift in Sources */,
+				22184164206B4767008458C2 /* AirAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		22BC6AE62068C7F600EC76F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				22BC6AF02068C7F600EC76F3 /* ViewController.swift in Sources */,
-				22BC6B092069E85C00EC76F3 /* PlaceModel.swift in Sources */,
 				22BC6B042069E3EA00EC76F3 /* SearchVC.swift in Sources */,
-				22BC6B022068D1CF00EC76F3 /* AirAPI.swift in Sources */,
-				22BC6B002068CA5D00EC76F3 /* AirModel.swift in Sources */,
 				22BC6AEE2068C7F600EC76F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		22184149206B390F008458C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2218413C206B390E008458C2 /* AireportWidget */;
+			targetProxy = 22184148206B390F008458C2 /* PBXContainerItemProxy */;
+		};
+		2218415C206B43E1008458C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22184155206B43E1008458C2 /* AireportKit */;
+			targetProxy = 2218415B206B43E1008458C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		22184144206B390E008458C2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22184145206B390E008458C2 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		22BC6AF12068C7F600EC76F3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -208,6 +442,92 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2218414B206B390F008458C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AireportWidget/AireportWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CR7BE3B56R;
+				INFOPLIST_FILE = AireportWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZacJi.Aireport.AireportWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2218414C206B390F008458C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AireportWidget/AireportWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CR7BE3B56R;
+				INFOPLIST_FILE = AireportWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZacJi.Aireport.AireportWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22184160206B43E1008458C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CR7BE3B56R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AireportKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZacJi.AireportKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		22184161206B43E1008458C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CR7BE3B56R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AireportKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZacJi.AireportKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		22BC6AFA2068C7F600EC76F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,10 +642,13 @@
 		22BC6AFD2068C7F600EC76F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Aireport/Aireport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CR7BE3B56R;
 				INFOPLIST_FILE = Aireport/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZacJi.Aireport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -337,10 +660,13 @@
 		22BC6AFE2068C7F600EC76F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Aireport/Aireport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CR7BE3B56R;
 				INFOPLIST_FILE = Aireport/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZacJi.Aireport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +678,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2218414D206B390F008458C2 /* Build configuration list for PBXNativeTarget "AireportWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2218414B206B390F008458C2 /* Debug */,
+				2218414C206B390F008458C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2218415F206B43E1008458C2 /* Build configuration list for PBXNativeTarget "AireportKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22184160206B43E1008458C2 /* Debug */,
+				22184161206B43E1008458C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		22BC6AE52068C7F600EC76F3 /* Build configuration list for PBXProject "Aireport" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
