@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import AireportKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
