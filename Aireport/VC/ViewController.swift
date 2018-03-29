@@ -30,6 +30,11 @@ class ViewController: UIViewController {
 
     @objc func getDate() {
         AirAPI.getAirReport { (airModel) in
+            guard let airModel = airModel else {
+                self.cityLable.text = "Ohps"
+                self.aqiLable.text = "000"
+                return
+            }
             self.cityLable.text = airModel.city.name
             self.aqiLable.text = "\(airModel.aqi)"
             self.view.backgroundColor = AirTools.color(aqi: airModel.aqi)

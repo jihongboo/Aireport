@@ -26,6 +26,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         AirAPI.getAirReport { (airModel) in
+            guard let airModel = airModel else {
+                return
+            }
             self.aqiLable.text = "\(airModel.aqi)"
             self.view.backgroundColor = AirTools.color(aqi: airModel.aqi)
         }

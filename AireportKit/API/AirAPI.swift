@@ -24,7 +24,7 @@ public class AirAPI: NSObject {
     static let userDefault = UserDefaults(suiteName: "group.aireport.widget")!
 
 
-    public static func getAirReport(completeBlock: @escaping ((_ airModel: AirModel)->())) {
+    public static func getAirReport(completeBlock: @escaping ((_ airModel: AirModel?)->())) {
         if let data = userDefault.value(forKey: "aqi") as? Data {
             AirAPI.handelData(data: data, completeBlock: completeBlock)
         }
@@ -51,12 +51,14 @@ public class AirAPI: NSObject {
             }.resume()
     }
 
-    static func handelData(data:Data, completeBlock: @escaping ((_ airModel: AirModel)->())) {
+    static func handelData(data:Data, completeBlock: @escaping ((_ airModel: AirModel?)->())) {
         if let obj = try? JSONDecoder().decode(AirResponse.self, from: data) {
             DispatchQueue.main.async(execute: {
                 userDefault.set(obj.data.aqi, forKey: "AQI")
                 completeBlock(obj.data)
             })
+        }else {
+            completeBlock(nil)
         }
     }
 }
