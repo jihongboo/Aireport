@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
 
     @objc func getDate() {
-        AirAPI.getAirReport { (airModel) in
+        AirAPI.getAirReportNow { (airModel) in
             guard let airModel = airModel else {
                 self.cityLable.text = "Ohps"
                 self.aqiLable.text = "000"

@@ -32,4 +32,28 @@ public class AirTools: NSObject {
         }
         return color
     }
+
+    public static func aqiState(aqi: NSInteger) ->(String) {
+        var state = "严重污染"
+        switch aqi {
+        case 0...50:
+            state = "优"
+            break
+        case 51...100:
+            state = "良"
+            break
+        case 101...150:
+            state = "轻度污染"
+            break
+        case 151...200:
+            state = "中度污染"
+            break
+        case 201...300:
+            state = "重度污染"
+            break
+        default:
+            break
+        }
+        return state
+    }
 }

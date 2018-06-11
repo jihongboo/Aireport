@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import UserNotifications
 import AireportKit
 
 @UIApplicationMain
@@ -15,20 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        registerPush()
         UIApplication.shared.setMinimumBackgroundFetchInterval(60 * 30)
+        AirNotification.regist()
         return true
-    }
-
-    func registerPush() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.badge]) { (granted, error) in
-        }
     }
 
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         AirAPI.getAirReport { (airModel) in
+            guard let airModel = airModel else {
+                return
+            }
+            AirNotification.sendNotification(air: airModel)
         }
         completionHandler(.newData)
     }
 }
-

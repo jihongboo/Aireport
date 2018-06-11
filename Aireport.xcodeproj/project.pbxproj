@@ -24,6 +24,7 @@
 		22BC6AF32068C7F600EC76F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BC6AF12068C7F600EC76F3 /* Main.storyboard */; };
 		22BC6AF82068C7F600EC76F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BC6AF62068C7F600EC76F3 /* LaunchScreen.storyboard */; };
 		22BC6B042069E3EA00EC76F3 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BC6B032069E3EA00EC76F3 /* SearchVC.swift */; };
+		22F8D163209173E90009BF29 /* AirNotifiCation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F8D162209173E90009BF29 /* AirNotifiCation.swift */; };
 		FF93CAE6206BCD9500CB2813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BC6AF42068C7F600EC76F3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		22BC6B012068D1CF00EC76F3 /* AirAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirAPI.swift; sourceTree = "<group>"; };
 		22BC6B032069E3EA00EC76F3 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		22BC6B082069E85C00EC76F3 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		22F8D162209173E90009BF29 /* AirNotifiCation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirNotifiCation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 			children = (
 				22184167206B6C76008458C2 /* AirTools.swift */,
 				22BC6B012068D1CF00EC76F3 /* AirAPI.swift */,
+				22F8D162209173E90009BF29 /* AirNotifiCation.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				22184166206B47D0008458C2 /* PlaceModel.swift in Sources */,
 				22184168206B6C76008458C2 /* AirTools.swift in Sources */,
 				22184164206B4767008458C2 /* AirAPI.swift in Sources */,
+				22F8D163209173E90009BF29 /* AirNotifiCation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,9 +651,14 @@
 				CODE_SIGN_ENTITLEMENTS = Aireport/Aireport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CR7BE3B56R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Aireport",
+				);
 				INFOPLIST_FILE = Aireport/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZacJi.Aireport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -665,9 +674,14 @@
 				CODE_SIGN_ENTITLEMENTS = Aireport/Aireport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CR7BE3B56R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Aireport",
+				);
 				INFOPLIST_FILE = Aireport/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZacJi.Aireport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

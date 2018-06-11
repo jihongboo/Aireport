@@ -24,10 +24,14 @@ public class AirAPI: NSObject {
     static let userDefault = UserDefaults(suiteName: "group.aireport.widget")!
 
 
-    public static func getAirReport(completeBlock: @escaping ((_ airModel: AirModel?)->())) {
+    public static func getAirReportNow(completeBlock: @escaping ((_ airModel: AirModel?)->())) {
         if let data = userDefault.value(forKey: "aqi") as? Data {
             AirAPI.handelData(data: data, completeBlock: completeBlock)
         }
+        AirAPI.getAirReport(completeBlock: completeBlock)
+    }
+
+    public static func getAirReport(completeBlock: @escaping ((_ airModel: AirModel?)->())) {
         let city = cityUid! == 0 ? "here" : "@\(cityUid!)"
         let request = URLRequest(url: URL(string: "https://api.waqi.info/feed/\(city)/?token=\(token)")!)
         URLSession.shared.dataTask(with: request) { (data, response, error) in
@@ -54,7 +58,6 @@ public class AirAPI: NSObject {
     static func handelData(data:Data, completeBlock: @escaping ((_ airModel: AirModel?)->())) {
         if let obj = try? JSONDecoder().decode(AirResponse.self, from: data) {
             DispatchQueue.main.async(execute: {
-                userDefault.set(obj.data.aqi, forKey: "AQI")
                 completeBlock(obj.data)
             })
         }else {

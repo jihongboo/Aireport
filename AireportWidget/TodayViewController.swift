@@ -25,7 +25,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        AirAPI.getAirReport { (airModel) in
+        AirAPI.getAirReportNow { (airModel) in
             guard let airModel = airModel else {
                 return
             }
