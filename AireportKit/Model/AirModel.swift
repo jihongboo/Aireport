@@ -6,18 +6,23 @@
 //  Copyright © 2018年 ZacJi. All rights reserved.
 //
 
-import UIKit
 
 public struct AirResponse: Codable {
-    var data: AirModel
+    let data: AirModel
 }
 
 public struct AirModel: Codable {
-    public var aqi: NSInteger
-    public var idx: NSInteger
-    public var city: City
+    public init(aqi: Int, idx: Int, cityName: String) {
+        self.aqi = aqi
+        self.idx = idx
+        self.city = City(name: cityName)
+    }
+
+    public let aqi: Int
+    public let idx: Int
+    public let city: City
 }
 
 public struct City: Codable {
-    public var name: String
+    public let name: String
 }

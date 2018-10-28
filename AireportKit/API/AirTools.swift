@@ -6,8 +6,6 @@
 //  Copyright © 2018年 ZacJi. All rights reserved.
 //
 
-import UIKit
-
 public class AirTools: NSObject {
     public static func color(aqi: NSInteger) ->(UIColor) {
         var color = #colorLiteral(red: 0.492726028, green: 0.006434844341, blue: 0.1375600398, alpha: 1)

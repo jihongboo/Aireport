@@ -6,7 +6,6 @@
 //  Copyright © 2018年 ZacJi. All rights reserved.
 //
 
-import UIKit
 import UserNotifications
 
 public class AirNotification: NSObject {

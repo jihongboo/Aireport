@@ -6,8 +6,6 @@
 //  Copyright © 2018年 ZacJi. All rights reserved.
 //
 
-import UIKit
-
 public struct PlaceResponse: Codable {
     var data: [Place]
 }

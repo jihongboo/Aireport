@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <!--AQI-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="AQI" alwaysBounce="YES" fullBounds="YES" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AireportWC" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="pIB-rE-dFD">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Shanghai" id="9ad-vb-kQG">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                                <label alignment="center" verticalAlignment="center" text="34" textAlignment="center" id="PXy-7N-XCW">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="60"/>
+                                </label>
+                            </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="cdG-OI-emj">
+                                    <connections>
+                                        <action selector="refreshData:" destination="AgC-eL-Hgc" id="bDF-66-hPN"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                            <color key="backgroundColor" name="Good"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="aqiLable" destination="PXy-7N-XCW" id="Uep-n0-rsS"/>
+                        <outlet property="background" destination="pIB-rE-dFD" id="bRl-K2-VNx"/>
+                        <outlet property="cityLable" destination="9ad-vb-kQG" id="ZKJ-qA-G31"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="AireportWC" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="56" y="1058"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="AireportWC" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="1058"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Good">
+            <color red="0.17000000178813934" green="0.60000002384185791" blue="0.39899998903274536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

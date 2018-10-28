@@ -6,8 +6,6 @@
 //  Copyright © 2018年 ZacJi. All rights reserved.
 //
 
-import UIKit
-
 public class AirAPI: NSObject {
     static let token = "ff6bd257aab3a6d9a4f0b29625dd9d3668276c7d"
     public static var cityUid: NSInteger! {
