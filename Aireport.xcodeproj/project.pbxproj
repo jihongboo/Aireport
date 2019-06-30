@@ -512,7 +512,7 @@
 				TargetAttributes = {
 					2218413C206B390E008458C2 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -522,12 +522,12 @@
 					};
 					22184155206B43E1008458C2 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					22BC6AE92068C7F600EC76F3 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -544,10 +544,12 @@
 					};
 					FF5FE9F22180C4B000625AA3 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					FFAAAAB9218214F600C922C1 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -759,7 +761,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZacJi.Aireport.AireportWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -776,7 +778,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZacJi.Aireport.AireportWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -801,7 +803,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -829,7 +831,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -961,12 +963,12 @@
 					"$(PROJECT_DIR)/Aireport",
 				);
 				INFOPLIST_FILE = Aireport/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZacJi.Aireport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -984,12 +986,12 @@
 					"$(PROJECT_DIR)/Aireport",
 				);
 				INFOPLIST_FILE = Aireport/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZacJi.Aireport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1009,7 +1011,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
@@ -1029,7 +1031,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
@@ -1102,7 +1104,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1131,7 +1133,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

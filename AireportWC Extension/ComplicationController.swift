@@ -130,6 +130,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             template.body2TextProvider = CLKSimpleTextProvider(text: "\(aqi)")
             template.headerImageProvider = CLKFullColorImageProvider(fullColorImage: UIImage(named: "Complication/Graphic Corner")!)
             return template
+        @unknown default:
+            return nil
         }
         return nil
     }
